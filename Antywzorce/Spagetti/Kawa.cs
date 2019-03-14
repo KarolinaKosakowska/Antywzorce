@@ -8,12 +8,15 @@ namespace Antywzorce.Spagetti
 {
     public class Kawa : IDrink
     {
-   
+        public int Napoj { get ; set ; }
+        public int Wielkosc { get ; set; }
+        public int Mleko { get; set; }
+        public int IleMleka { get; set; }
+        public int Cukier { get; set; }
+        public int IleCukru { get; set; }
+
         public string SelectSize()
         {
-
-            public string Create()
-            {
                 string food = "";
                 if (Napoj == 1)
                 {
@@ -143,10 +146,10 @@ namespace Antywzorce.Spagetti
                     food = "Porcja soku"; food += $"; {size} {ml} ml; {milk}; {shugar}";
                 }
                 return food;
-            }
+            
         }
 
 
     }
-    }
+    
 }
